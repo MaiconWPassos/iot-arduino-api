@@ -23,7 +23,7 @@ board.on('ready', () => {
   let status = false;
 
 app.get('/acende', (req, res) => {
-  // led.on();
+  led.on();
   status = true
   return res.json({
     status,
@@ -32,7 +32,7 @@ app.get('/acende', (req, res) => {
 });
 
 app.get('/apaga', (req, res) => {
-  // led.off();
+  led.off();
   status = false;
   return res.json({
     status,
