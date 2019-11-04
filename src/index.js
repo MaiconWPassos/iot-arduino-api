@@ -34,9 +34,9 @@ board.on('ready', () => {
         socket.broadcast.emit('status', status);
         
         socket.on('on', (data) => {
-            led.on();
-            status = true;
-            socket.broadcast.emit('status', status);
+            led.on(); 
+            status = true; 
+            socket.broadcast.emit('status', true);
             console.log(data)
         })
 
@@ -44,11 +44,10 @@ board.on('ready', () => {
         socket.on('off', (data) => {
             led.off();
             status = false;
-            socket.broadcast.emit('status', status);
+            socket.broadcast.emit('status', false);
             console.log(data)
         })
 
     })
     server.listen(PORT, () => getIP(PORT))
 });
-
