@@ -14,3 +14,7 @@ Visual Studio Code
 
 #### Placa IoT 
 Arduíno UNO
+
+#### Aplicação cliente
+Aplicativo Contruido em React Native para consumo deste exemplo
+[iot-arduino-rn](https://github.com/MaiconWPassos/iot-arduino-rn)
